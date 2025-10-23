@@ -3,16 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nikel - Histórico</title>
+    <title>Nikel - Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body id="login">
+  <body id="app">
+    <header>
+      <nav class="navbar navbar-expand navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/public/assets/images/nikel-small-logo.png"
+              alt="logo nikel"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="d-flex">
+              <a href="home.html">
+                <button class="btn color-secondary" type="button">
+                  <i class="bi bi-house-door-fill fs-4"></i>
+                </button>
+              </a>
+              <a href="home.html">
+                <button class="btn" type="button">
+                  <i class="bi bi-currency-exchange fs-4"></i>
+                </button>
+              </a>
+
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-person-circle fs-4"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi bi-box-arrow-right"></i> Sair
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="container">
         <div class="row vh-100">
@@ -27,18 +87,16 @@
                 src="assets/images/pocket.png"
                 alt="imagem pocket"
                 class="img-fluid"
-                clsrcset=""
               />
               <img
                 src="./assets/images/coins.png"
                 alt="imagem coins"
                 class="img-fluid d-none d-md-inline coins"
-                clsrcset=""
               />
             </div>
           </div>
           <div class="col d-flex justify-content-center my-5 flex-column">
-            <div class="cotainer">
+            <div class="container">
               <div class="row">
                 <div class="col">
                   <div class="text-center mb-3">
@@ -46,7 +104,6 @@
                       src="./assets/images/nikel-logo.png"
                       alt="logo nikel"
                       class="img-fluid"
-                      srcset=""
                     />
                   </div>
                 </div>
@@ -55,9 +112,9 @@
                 <div class="col">
                   <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label"
-                        >Email</label
-                      >
+                      <label for="exampleInputEmail1" class="form-label">
+                        Email
+                      </label>
                       <input
                         type="email"
                         class="form-control"
@@ -69,9 +126,9 @@
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label"
-                        >Senha</label
-                      >
+                      <label for="exampleInputPassword1" class="form-label">
+                        Senha
+                      </label>
                       <input
                         type="password"
                         class="form-control"
@@ -84,19 +141,20 @@
                         class="form-check-input"
                         id="exampleCheck1"
                       />
-                      <label class="form-check-label" for="exampleCheck1"
-                        >Permanecer logado</label
-                      >
+                      <label class="form-check-label" for="exampleCheck1">
+                        Permanecer logado
+                      </label>
                     </div>
-                    <button type="submit" class="button-login">
-                      Entrar
-                    </button>
+                    <button type="submit" class="button-login">Entrar</button>
                   </form>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <p class="text-center mt-2 form-text">Ainda não tem uma conta? <span class="link-default">Criar uma conta.</span></p>
+                  <p class="text-center mt-2 form-text">
+                    Ainda não tem uma conta?
+                    <span class="link-default">Criar uma conta.</span>
+                  </p>
                 </div>
               </div>
               <div class="row">
@@ -106,7 +164,6 @@
                       src="/public/assets/images/codai-logo.png"
                       alt="logo codai"
                       class="img-fluid"
-                      srcset=""
                     />
                   </div>
                 </div>
@@ -118,7 +175,6 @@
                       src="/public/assets/images/growdev-logo.png"
                       alt="logo growdev"
                       class="img-fluid"
-                      srcset=""
                     />
                   </div>
                 </div>
@@ -128,5 +184,15 @@
         </div>
       </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
