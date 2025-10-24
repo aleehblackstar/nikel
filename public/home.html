@@ -40,16 +40,8 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div class="d-flex">
-              <a href="home.html">
-                <button class="btn color-secondary" type="button">
-                  <i class="bi bi-house-door-fill fs-4"></i>
-                </button>
-              </a>
-              <a href="home.html">
-                <button class="btn" type="button">
-                  <i class="bi bi-currency-exchange fs-4"></i>
-                </button>
-              </a>
+              <a href="home.html"><button class="btn color-secondary" type="button"><i class="bi bi-house-door-fill fs-4"></i></button></a>
+              <a href="home.html"><button class="btn" type="button"><i class="bi bi-currency-exchange fs-4"></i></button></a>
 
               <div class="dropdown">
                 <button
@@ -74,109 +66,53 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="row vh-100">
-          <div class="col d-flex justify-content-center flex-column my-5">
-            <div class="text-login">
-              <p>Organize suas finanças de forma fácil.</p>
-              <p>Controle seu dinheiro e investimentos em um só lugar.</p>
-              <p>Economize e atinja seus objetivos financeiros.</p>
-            </div>
+      <div class="container-lg">
+        <div class="row">
+         <div class="col d-flex justify-content-start align-items-center">
+            <i class="bi bi-cash-coin color-primary icon-detail"></i>
+            <span class="fs-2">R$ 0,000</span>
+         </div>
+         <div class="col d-flex mt-4 justify-content-end">
             <div class="text-center">
-              <img
-                src="assets/images/pocket.png"
-                alt="imagem pocket"
-                class="img-fluid"
-              />
-              <img
-                src="./assets/images/coins.png"
-                alt="imagem coins"
-                class="img-fluid d-none d-md-inline coins"
-              />
+              <img src="/public/assets/images/coins-small.png" alt="image coins">
             </div>
-          </div>
-          <div class="col d-flex justify-content-center my-5 flex-column">
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-12 info shadow-lg">
             <div class="container">
               <div class="row">
-                <div class="col">
-                  <div class="text-center mb-3">
-                    <img
-                      src="./assets/images/nikel-logo.png"
-                      alt="logo nikel"
-                      class="img-fluid"
-                    />
-                  </div>
+                <div class="col-6">
+                    <span class="fs-4">Entradas <i class="bi bi-arrow-down-circle fs-2 align-middle"></i></span>
+                </div>
+                <div class="col-6">
+                  <span class="fs-4">Saídas <i class="bi bi-arrow-up-circle fs-2 align-middle"></i></span>
+                </div>
+                <div class="col-12 my-2">
+                  <hr>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
-                  <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                      />
-                      <div id="emailHelp" class="form-text">
-                        Utilize seu e-mail para realizar o login.
+                <div class="col-6">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        R$ 1000.00
                       </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">
-                        Senha
-                      </label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                      />
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="exampleCheck1"
-                      />
-                      <label class="form-check-label" for="exampleCheck1">
-                        Permanecer logado
-                      </label>
-                    </div>
-                    <button type="submit" class="button-login">Entrar</button>
-                  </form>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <p class="text-center mt-2 form-text">
-                    Ainda não tem uma conta?
-                    <span class="link-default">Criar uma conta.</span>
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="text-center mt-5">
-                    <img
-                      src="/public/assets/images/codai-logo.png"
-                      alt="logo codai"
-                      class="img-fluid"
-                    />
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="text-center">
-                    <img
-                      src="/public/assets/images/growdev-logo.png"
-                      alt="logo growdev"
-                      class="img-fluid"
-                    />
+                <div class="col-6">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        R$ 500.00
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn button-defaut">Ver todas</button>
                 </div>
               </div>
             </div>
@@ -191,7 +127,7 @@
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
   </body>
