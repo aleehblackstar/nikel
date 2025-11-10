@@ -3,7 +3,7 @@
 }
 
 #app {
-    background: linear-gradient(120deg, #ffffff 43.9%, #4c79d3 44%) no-repeat fixed;;
+    background: linear-gradient(120deg, #ffffff 43.9%, #4c79d3 44%) no-repeat fixed;
 }
 
 header {
@@ -15,16 +15,33 @@ header {
 .info {
     background-color: #ffffff;
     border-radius: 20px 20px 0px 0px;
-    padding: 20px 0px 0px 0px ;
+    padding: 20px 0px 0px 0px;
 }
 
-.button-defaut, .button-defaut:hover {
+/* ✅ Correção + efeito moderno */
+.button-default,
+.button-default:hover {
     border-radius: 10px;
     background-color: #4e0070;
     color: #ffffff;
 }
 
+.button-cancel {
+    border-radius: 10px;
+}
 
+/* Efeito suave e consistente para ambos botões */
+.button-login,
+.button-default {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-login:hover,
+.button-default:hover {
+    background-color: #4c79d3;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
 
 .icon-detail {
     font-size: 50px;
@@ -37,7 +54,7 @@ header {
 }
 
 .color-secondary {
-    color: #4c79d3
+    color: #4c79d3;
 }
 
 .text-login {
@@ -47,7 +64,7 @@ header {
 }
 
 .coins {
-    position:absolute;
+    position: absolute;
     bottom: 100px;
 }
 
@@ -58,11 +75,6 @@ header {
     width: 50%;
     margin: 0 25%;
     padding: 5px;
-    }
-
-.button-login:hover {
-    background-color: #4c79d3;
-    color: #ffffff;
 }
 
 .link-default {
