@@ -53,15 +53,14 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <form>
+                  <form id="login-form">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label"
-                        >Email</label
-                      >
+                      <label for="email-input" class="form-label"
+                      >Email</label>
                       <input
                         type="email"
                         class="form-control"
-                        id="exampleInputEmail1"
+                        id="email-input"
                         aria-describedby="emailHelp"
                       />
                       <div id="emailHelp" class="form-text">
@@ -69,22 +68,22 @@
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label"
+                      <label for="password-input" class="form-label"
                         >Senha</label
                       >
                       <input
                         type="password"
                         class="form-control"
-                        id="exampleInputPassword1"
+                        id="password-input"
                       />
                     </div>
                     <div class="mb-3 form-check">
                       <input
                         type="checkbox"
                         class="form-check-input"
-                        id="exampleCheck1"
+                        id="session-check"
                       />
-                      <label class="form-check-label" for="exampleCheck1"
+                      <label class="form-check-label" for="session-check"
                         >Permanecer logado</label
                       >
                     </div>
@@ -164,7 +163,7 @@
                     type="email"
                     class="form-control"
                     id="email-create-input"
-                    aria-describedby="emailHelp"
+                    aria-describedby="emailHelp" riequired
                   />
                   <div id="emailHelp" class="form-text">
                     Utilize seu e-mail para realizar a conta.
@@ -177,7 +176,7 @@
                   <input
                     type="password"
                     class="form-control"
-                    id="password-create-input"
+                    id="password-create-input" reiquired
                   />
                   <div id="emailHelp" class="form-text">
                     Utilize uma senha fácil de lembrar e anote para não
@@ -214,5 +213,6 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+    <script src="/public/js/index.js"></script>
   </body>
 </html>
