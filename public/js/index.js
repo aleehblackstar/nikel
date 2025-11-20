@@ -1,6 +1,23 @@
 const myModal = new bootstrap.Modal(document.getElementById("registerModal"));
-let logged = sessionStorage.getItem("logged");
-const session = localStorage.getItem("session");
+
+// ================== VERIFICA SE JÁ ESTÁ LOGADO ==================
+checkLogged();
+
+function checkLogged() {
+  const logged = sessionStorage.getItem("logged");
+  const session = localStorage.getItem("session");
+
+  if (session) {
+    sessionStorage.setItem("logged", session);
+    window.location.href = "home.html";
+    return;
+  }
+
+  if (logged) {
+    window.location.href = "home.html";
+    return;
+  }
+}
 
 // ================== LOGIN SISTEMA ==================
 document.getElementById("login-form").addEventListener("submit", function (e) {
@@ -28,7 +45,15 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
     return;
   }
 
-  // Se passou em tudo, login bem-sucedido
+  
+  sessionStorage.setItem("logged", email);
+
+
+  if (checkSession) {
+    localStorage.setItem("session", email);
+  }
+
+  // Login bem-sucedido
   alert("Login realizado com sucesso!");
   window.location.href = "home.html";
 });
@@ -63,49 +88,32 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     return;
   }
 
-  // Salva a conta somente se passou todas as validações
+  // Salva a conta
   saveAccount({
     login: email,
     password: password,
     transactions: [],
   });
 
-  // Fecha o modal corretamente
-  const myModal = bootstrap.Modal.getInstance(
+  // Fecha o modal
+  const modalInstance = bootstrap.Modal.getInstance(
     document.getElementById("registerModal")
   );
-  myModal.hide();
+  if (modalInstance) {
+    modalInstance.hide();
+  }
 
   alert("Conta criada com sucesso!");
+  
   // Limpa os campos do formulário
   document.getElementById("create-form").reset();
 });
 
-// ================== FUNÇÕES DE LOCALSTORAGE ==================
 
-function checkLogged() {
-  if (sessionStorage) {
-    sessionStorage.setItem("logged", session);
-    logged = session;
-  }
-
-  if (logged) {
-    saveSsession(logged, session);
-    window.location.href = "home.html";
-  }
-}
 
 function saveAccount(data) {
   localStorage.setItem(data.login, JSON.stringify(data));
-}
-
-function saveSsession(data, saveSsession) {
-  if (saveSsession) {
-    localStorage.setItem("session", data);
-  }
-}
-
-sessionStorage.setItem("logged", data);
+};
 
 function getAccount(key) {
   const account = localStorage.getItem(key);
@@ -113,4 +121,4 @@ function getAccount(key) {
     return JSON.parse(account);
   }
   return null;
-}
+};
