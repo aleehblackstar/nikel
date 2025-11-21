@@ -1,6 +1,9 @@
 # 💰 Nikel - Controle Financeiro
 
-Sistema de controle financeiro pessoal para gerenciar entradas e saídas.
+ Sistema de controle financeiro pessoal para gerenciar entradas e saídas.
+
+ # Screenshot da Aplicação
+![Tela de demonstração da aplicação](public/assets/images/screenshotNikel.jpg)
 
 ## 📋 Sobre o Projeto
 
