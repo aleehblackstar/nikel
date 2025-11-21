@@ -69,4 +69,4 @@ O projeto utiliza Bootstrap para uma interface responsiva e moderna, com:
 
 ---
 
-**Desenvolvido durante curso de desenvolvimento web** 🎓
+**Desenvolvido durante curso de desenvolvimento web Codai 2.0** 🎓

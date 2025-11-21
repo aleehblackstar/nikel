@@ -6,7 +6,7 @@ let data = {
   transactions: []
 };
 
-// Event listeners
+
 document.querySelector(".dropdown-item").addEventListener("click", logout);
 
 // Adicionar transações
